@@ -17,7 +17,6 @@ public class InputDemo {
         input.nextLine();
         String myString = input.nextLine();
         System.out.printf("You entered %s", myString);
-        System.out.println("You entered " + myString);
     }
     
 }
