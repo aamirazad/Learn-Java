@@ -9,8 +9,7 @@ public class IfDemo{
         int userAge = input.nextInt();
         if (userAge < 0 || userAge > 100)
         {
-            System.out.println("Invalid Age"); //Try to do \n
-            System.out.println("Age must be between 0 and 100");
+            System.out.println("Invalid Age \nAge must be between 0 and 100");
         }
         else if (userAge < 18)
             System.out.println("Sorry your underage");
