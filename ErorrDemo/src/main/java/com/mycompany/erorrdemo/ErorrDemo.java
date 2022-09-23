@@ -4,6 +4,8 @@
  */
 
 package com.mycompany.erorrdemo;
+import java.util.Scanner;
+
 
 /**
  *
@@ -12,6 +14,24 @@ package com.mycompany.erorrdemo;
 public class ErorrDemo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int num, deno;
+        Scanner input = new Scanner(System.in);
+        
+        try
+        {
+            System.out.print("Please enter the numerator: ");
+            num = input.nextInt();
+            System.out.print("Please enter the denominator: ");
+            deno = input.nextInt();
+            System.out.println("The result is " + num/deno);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+        finally
+        {
+            System.out.println("--- End of Error Handling Example ---");
+        }
     }
 }
